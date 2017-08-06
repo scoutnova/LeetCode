@@ -33,7 +33,7 @@ public class OrderSample {
         int feeForMerc04withASAPandCoupon = shippingModule.calcShippingFeeWithCoupon(merc04, ShippingModule.Shippers.ASAP, coupon);
 
         System.out.println("Shipping Fee for Merc04 with ASAP: "+ feeForMerc04withASAP);
-        System.out.println("Shipping Fee for Merc05 with ASAP: "+ feeForMerc04withASAPandCoupon);
+        System.out.println("Shipping Fee for Merc04 with ASAP and Coupon: "+ feeForMerc04withASAPandCoupon);
     }
     static void initModules(){
         shippingModule = ShippingModule.getInstance();
