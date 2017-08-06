@@ -11,7 +11,7 @@ public class OrderSample {
         //初始化各個模組，在此場景中只有一個計算運費的模組
         initModules();
 
-        //這邊根據題目建構了四種不同的箱子
+        //這邊根據題目建構了四種不同的商品
         Merchandise merc01 = new Merchandise(10,10,10);
         Merchandise merc02 = new Merchandise(20,20,20);
         Merchandise merc03 = new Merchandise(30,30,30);
@@ -23,7 +23,7 @@ public class OrderSample {
         int feeForMerc02withHCT = shippingModule.calcShippingFee(merc02, ShippingModule.Shippers.HCT);
         int feeForMerc03withPOST = shippingModule.calcShippingFee(merc03, ShippingModule.Shippers.POST);
         System.out.println("Shipping Fee for Merc01 with TCAT: "+ feeForMerc01withTCAT);
-        System.out.println("Shipping Fee for Merc01 with TCAT: "+ feeForMerc02withTCAT);
+        System.out.println("Shipping Fee for Merc02 with TCAT: "+ feeForMerc02withTCAT);
         System.out.println("Shipping Fee for Merc02 with HCT: "+ feeForMerc02withHCT);
         System.out.println("Shipping Fee for Merc03 with POST: "+ feeForMerc03withPOST);
 
