@@ -2,6 +2,17 @@ import java.util.Arrays;
 
 public class CollectionCombination {
     public static String[] collectionCombination(String[] col, int length){
+        //先判斷輸入值是否合法
+        if ((null == col) || (0 > col.length)){
+            System.out.println("Input Error: collection is empty or null" );
+            return new String[0];
+        }
+
+        if (0 > length){
+            System.out.println("Input Error: length less than 0");
+            return new String[0];
+        }
+
         //初始化陣列的大小, 為元素總長度的輸出長度次方
         String[] allLists = new String[(int)Math.pow(col.length, length)];
 
